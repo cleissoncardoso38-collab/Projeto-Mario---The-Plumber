@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;           
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 20px;
+}
+header img {
+    width: 70px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+header a:hover{
+    color: #c51111;
+    opacity: 0.5;    
+    transition: 1s ease-in-out ;
+    transform:  translateY(-5px);
+    font-size: 30px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    gap: 30px;
+    
+    
+}
+.sobre-nos {
+    width: 40%;
+}
+p {
+    font-size: 20px;
+    color: white;
+    line-height: 35px;
+}
+.logo-mario {
+    width: 350px;
+}
+.contact-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: #c51111;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.logo-mario-luigi {
+    height: 500px;
+}
+.back-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;    
+}
+video {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+div .mask-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+}
+footer{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.link-whatsapp img {
+    width: 70px;    
+}
+.link-whatsapp {
+    cursor: pointer;
+}
+form {
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: -260px;
+    padding: 20px;
+    border-radius: 3px;
+    gap: 10px;
+    z-index: 1;
+    transition: 0.5s left ease-in-out ;
+
+
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+form input {
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    height: 150px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+form button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: #c51111;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form:hover {
+    border: 1px solid #72e44f;
+}
+
+form input:hover {
+    border: 2px solid #72e44f;
+}
+form textarea:hover {
+    border: 2px solid #72e44f;
+}
+.mask-form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: 0.5s visibility ease-in-out ;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <title>Projeto Mario</title>
+</head>
+
+<body>
+    <header>
+        <img src="./logo-header.png" alt="rosto-do-mario" class="logo">
+
+        <a href="">Home</a>
+        <a href="">Fale Conosco</a>
+        <a href="">Nossos Serviços</a>
+    </header>
+    <div class="container">
+
+        <main class="sobre-nos">
+            <img src="./assets/logo.png" class="logo-mario">
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento?
+                Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar?
+                Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button class="contact-button" onclick="showForm()">Entre em Contato</button>
+        </main>
+        <aside>
+            <img src="./assets/foto-mari-e-luigi.png" alt="" class="logo-mario-luigi">
+        </aside>
+        <div class="back-video">
+            <video src="./assets/video.mp4" autoplay loop muted></video>
+            <div class="mask-video"></div>
+        </div>
+    </div>    
+    <footer>
+        <a href="https://w.app/emunkw" class="link-whatsapp">
+            <img src="./assets/whatsapp.png" alt="">
+        </a>
+    </footer>
+    <form class="service-form">
+        <input placeholder="Seu Nome">
+        <input placeholder="Telefone">
+        <textarea placeholder="Digite seu problema"></textarea>
+        <button>Pedir orçamento</button>
+    </form>
+    <div onclick="hiddenForm ()" class="mask-form">
+
+    </div>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
