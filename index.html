@@ -30,7 +30,7 @@
                 Não se preocupe, porque estamos aqui para salvar o dia!
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
-            <button class="contact-button" onclick="showForm()">Entre em Contato</button>
+            <button type="submit" class="contact-button" onclick="showForm()">Entre em Contato</button>
         </main>
         <aside>
             <img src="./assets/foto-mari-e-luigi.png" alt="" class="logo-mario-luigi">
@@ -45,10 +45,16 @@
             <img src="./assets/whatsapp.png" alt="">
         </a>
     </footer>
-    <form class="service-form">
-        <input placeholder="Seu Nome">
-        <input placeholder="Telefone">
-        <textarea placeholder="Digite seu problema"></textarea>
+    <form 
+    class="service-form"
+    action="https://formcarry.com/s/mvtLb3VqSo4"
+    method="POST"
+    enctype="multipart/form-data"
+    >
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Telefone" type="text" name="telefon">
+        <input placeholder="E-mail" type="email" name="email">
+        <textarea placeholder="Digite seu problema" name="problema"></textarea>
         <button>Pedir orçamento</button>
     </form>
     <div onclick="hiddenForm ()" class="mask-form">
