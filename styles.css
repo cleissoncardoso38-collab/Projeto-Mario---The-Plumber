@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,31 +9,36 @@
 
 body {
     width: 100vw;
-    height: 100vh;           
+    height: 100vh;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     gap: 30px;
     margin: 20px 20px;
 }
+
 header img {
     width: 70px;
 }
+
 header a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
-    
+
 }
-header a:hover{
+
+header a:hover {
     color: #c51111;
-    opacity: 0.5;    
-    transition: 1s ease-in-out ;
-    transform:  translateY(-5px);
+    opacity: 0.5;
+    transition: 1s ease-in-out;
+    transform: translateY(-5px);
     font-size: 30px;
 }
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -43,20 +47,24 @@ header a:hover{
     justify-content: space-around;
     padding: 100px;
     gap: 30px;
-    
-    
+
+
 }
+
 .sobre-nos {
     width: 40%;
 }
+
 p {
     font-size: 20px;
     color: white;
     line-height: 35px;
 }
+
 .logo-mario {
     width: 350px;
 }
+
 .contact-button {
     font-weight: bold;
     text-transform: uppercase;
@@ -69,37 +77,45 @@ p {
     cursor: pointer;
     margin-top: 30px;
 }
+
 .logo-mario-luigi {
     height: 500px;
 }
+
 .back-video {
     position: fixed;
     top: 0;
-    z-index: -1;    
+    z-index: -1;
 }
+
 video {
     min-width: 100vw;
     min-height: 100vh;
 }
+
 div .mask-video {
     position: fixed;
     top: 0;
     right: 0;
     min-width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 15px;
     right: 15px;
 }
+
 .link-whatsapp img {
-    width: 70px;    
+    width: 70px;
 }
+
 .link-whatsapp {
     cursor: pointer;
 }
+
 form {
     width: 350px;
     background-color: white;
@@ -112,12 +128,13 @@ form {
     border-radius: 3px;
     gap: 10px;
     z-index: 1;
-    transition: 0.5s left ease-in-out ;
+    transition: 0.5s left ease-in-out;
 
 
     /* left: 50%;
     transform: translateX(-50%); */
 }
+
 form input {
     height: 40px;
     padding-left: 15px;
@@ -133,6 +150,7 @@ form textarea {
     border: 1px solid gray;
     outline-color: #18d80f;
 }
+
 form button {
     font-weight: bold;
     text-transform: uppercase;
@@ -153,15 +171,91 @@ form:hover {
 form input:hover {
     border: 2px solid #72e44f;
 }
+
 form textarea:hover {
     border: 2px solid #72e44f;
 }
-.mask-form{
+
+.mask-form {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     visibility: hidden;
-    transition: 0.5s visibility ease-in-out ;
+    transition: 0.5s visibility ease-in-out;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+        margin-top: -70px;
+    }
+
+    .logo-mario {
+        display: none;
+    }
+
+    .logo-mario-luigi {
+        height: 250px;
+    }
+
+    p {
+        font-size: 14px;
+        width: 270px;
+        color: white;
+        line-height: 25px;
+    }
+
+    .sobre-nos {
+        width: 70%;
+    }
+    div .mask-video{
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    header a {
+    font-size: 14px;
+    
+}
+header {
+    gap: 15px;
+    
+}
+
+header img {
+    width: 50px;
+}
+.contact-button {
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
+form {
+    width: 280px;  
+    
+}
+form input {
+    height: 40px;    
+}
+
+form textarea {
+    height: 100px;    
+}
+
+form button {
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+}
+.link-whatsapp img {
+    width: 50px;
+}
+
 }
